@@ -1,3 +1,29 @@
+#navbar {
+    display: flex;
+    align-items: right;
+    color: white;
+}
+
+header {
+    background-image: url("./images/bgk-header.png");
+    text-align: center;
+    color: white;
+}
+
+
+/* the "learn More Button on top of the page*/
+
+#hero-section {
+    color: white;
+}
+
+#learn-more {
+    padding: 10px 10px;
+    border: 2px solid white;
+    border-color: white;
+    margin: 10px 10px;
+}
+
 #our_story-section {}
 
 #watch-section {}
