@@ -4,6 +4,66 @@
 
 #expertise-section {}
 
-#team-section {}
+#team-section {
+    background-image: url(./images/bgk-team.png);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    justify-content: space-around;
+    color: white;
+
+}
+.button-hiring {
+    background: transparent;
+    border: 1px solid white;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 0.8rem;
+    margin: 0 auto;
+
+}
+.button-hiring:hover {
+    color: black;
+    background:  rgba(255, 255, 255, 0.2);
+    
+}
+
+.hiring {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.team-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    min-height: 200px;
+    min-width: 600px;
+    background: transparent;
+    
+    
+}
+.about-content{
+    border: 1px solid white;
+    text-align: center;
+    font-size: 0.6rem;
+}
+.blank {
+    background-color: white;
+    height: 60%;
+    width: auto;
+    font-size: 1rem;
+}
 
 #contact_client-section {}
