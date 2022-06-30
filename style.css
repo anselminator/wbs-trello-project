@@ -3,12 +3,13 @@
 * { outline: solid 1px red; }
 */
 
-/*********** General Styles ***********/
+/*********** General Styles Start ***********/
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,900&display=swap');
 
 :root {
   --green: #00e0d0;
+  --lightGrey: #333;
 }
 
 /* apply a natural box layout model to all elements, but allowing components to change */
@@ -55,6 +56,11 @@ html {
   border: 1px solid var(--green);
 }
 
+main section {
+    width: 1280px;
+    margin: 0 auto;
+}
+
 .sectionHeadline {
   margin-top: 0;
 
@@ -64,11 +70,10 @@ html {
   text-transform: uppercase;
 }
 
-/**********************/
+/*********** General Styles Stop ***********/
 
 /* Here stops code for our_story-section */
 #our_story-section {
-  width: 1280px;
   margin: 0 auto;
   padding: 3rem 6rem;
 
@@ -112,9 +117,117 @@ html {
 
 /* Here stops code for our_story-section */
 
-#watch-section {}
 
-#expertise-section {}
+/* Here start code for watch-section */
+#watch-section {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 80vh;
+
+  background: url("images/bgk-middle.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#watch-section article {
+  text-align: center;
+}
+
+#watch-section article h3 {
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #fff;
+}
+/* Here stops code for watch-section */
+
+/* Here start code for expertise-section */
+#expertise-section {
+  margin: 6rem 0;
+}
+
+#expertise-section article:first-child {
+  margin: 0 auto;
+  padding: 2rem;
+
+  text-align: center;
+
+}
+
+#expertise-section article p {
+  position: relative;
+
+  color: var(--lightGrey);
+}
+
+#expertise-section article:first-child p::after {
+  position: absolute;
+  left: calc(50% - 35px);
+  top: 35px;
+  display: block;
+  width: 70px;
+  border-bottom: 3px solid #333;
+  content: "";
+}
+
+
+
+#services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 1px;
+}
+
+#services .card {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 200px 200px;
+  gap: 10px;
+
+  padding: 1.5rem;
+
+  text-align: center;
+}
+
+#services .card:nth-child(1) {  border-right: 1px solid var(--lightGrey);  border-bottom: 1px solid var(--lightGrey);  }
+#services .card:nth-child(2) {  border-right: 1px solid var(--lightGrey);  border-bottom: 1px solid var(--lightGrey);  }
+#services .card:nth-child(3) {  border-bottom: 1px solid var(--lightGrey);  }
+#services .card:nth-child(4) {  border-right: 1px solid var(--lightGrey);  }
+#services .card:nth-child(5) {  border-right: 1px solid var(--lightGrey);  }
+
+@media (max-width: 767px) {
+  #services .card {
+    border: none !important;
+  }
+}
+
+
+
+#services .card .icon {
+  width: 50px;
+}
+
+#services .card h3 {
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-size: 1.rem;
+  font-weight: 600;
+}
+
+
+#services .card p {
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--lightGrey);
+}
+
+
+
+/* Here start code for expertise-section */
 
 #team-section {
     background-image: url(./images/bgk-team.png);
