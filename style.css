@@ -240,6 +240,7 @@ main section {
     border: none !important;
     border-bottom: 1px solid var(--lightGrey) !important;
   }
+  
 }
 
 @media screen and (min-width: 768px) and (max-width: 1280px) {
@@ -273,36 +274,16 @@ main section {
     background-position: center;
     background-size: cover;
     width: 100%;
+    /* min-width: 200px; */
+    /* max-width: 1000px; */
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 40rem;
     justify-content: space-around;
     color: white;
-
-}
-.button-hiring {
-    background: transparent;
-    border: 1px solid white;
-    padding: 10px;
-    text-align: center;
-    color: white;
-    font-size: 0.8rem;
-    margin: 0 auto;
-
-}
-.button-hiring:hover {
-    color: black;
-    background:  rgba(255, 255, 255, 0.2);
-
 }
 
-.hiring {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-}
 .team-heading {
     display: flex;
     flex-direction: column;
@@ -318,8 +299,14 @@ main section {
     min-width: 600px;
     background: transparent;
 
-
 }
+
+@media (max-width: 767px) {
+  .about-section {
+    grid-template-columns: 1fr;
+  }
+}
+
 .about-content{
     border: 1px solid white;
     text-align: center;
@@ -332,15 +319,45 @@ main section {
     font-size: 1rem;
 }
 
+.button-hiring {
+  background: transparent;
+  border: 1px solid white;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-size: 0.8rem;
+  margin: 0 auto;
+
+}
+.button-hiring:hover {
+  color: black;
+  background:  rgba(255, 255, 255, 0.2);
+
+}
+
+.hiring {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
 .contact-client-section {
-    height: 30rem;
+    height: auto;
     width: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    /* grid-template-columns: 1fr 1fr; */
     gap: 30px;
     overflow: hidden;
     margin: 2rem 4rem ;
 
+}
+
+@media (max-width: 767px) {
+  .contact-client-section {
+    flex-direction: column;
+  }
 }
 
 .contact-form {
@@ -370,7 +387,6 @@ main section {
   /* height: auto;
   width: 100%; */
 
-
 }
 
 .clientsimg {
@@ -378,6 +394,8 @@ main section {
     grid-template-columns: 1fr 1fr;
     gap: 0.6rem ;
 }
+
+
 
 .clientsimg img {
     min-width: 3rem;
