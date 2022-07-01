@@ -300,11 +300,14 @@ main section {
     background: transparent;
 
 }
-
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .about-section {
-    grid-template-columns: 1fr;
+    display: grid;
+    min-height: auto;
+    min-width: auto;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
   }
+
 }
 
 .about-content{
