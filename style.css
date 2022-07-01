@@ -153,7 +153,7 @@ main section {
 
 /* Here start code for expertise-section */
 #expertise-section {
-  margin: 6rem 0;
+  margin: 6rem auto;
 }
 
 #expertise-section article:first-child {
@@ -179,8 +179,6 @@ main section {
   border-bottom: 3px solid #333;
   content: "";
 }
-
-
 
 #services {
   max-width: 1280px;
@@ -213,8 +211,6 @@ main section {
   }
 }
 
-
-
 #services .card .icon {
   width: 50px;
 }
@@ -233,9 +229,7 @@ main section {
   color: var(--darkGrey);
 }
 
-
-
-/* Here start code for expertise-section */
+/* Here ends code for expertise-section */
 
 #team-section {
     background-image: url(./images/bgk-team.png);
