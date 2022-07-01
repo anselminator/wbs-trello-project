@@ -62,7 +62,7 @@ html {
 }
 
 main section {
-    max-width: 1280px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -240,7 +240,7 @@ main section {
     border: none !important;
     border-bottom: 1px solid var(--lightGrey) !important;
   }
-  
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1280px) {
@@ -249,7 +249,7 @@ main section {
 }
 
 #services .card .icon {
-  width: 50px;
+  height: 50px;
 }
 
 #services .card h3 {
