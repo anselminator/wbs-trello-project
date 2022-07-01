@@ -66,6 +66,12 @@ main section {
     margin: 0 auto;
 }
 
+.fullwidth {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
 .sectionHeadline {
   margin-top: 0;
 
@@ -143,7 +149,6 @@ main section {
   justify-content: center;
   align-items: center;
 
-  width: 100%;
   height: 80vh;
 
   background: url("images/bgk-middle.png");
@@ -175,7 +180,7 @@ main section {
 
 /* Here start code for expertise-section */
 #expertise-section {
-  margin: 6rem auto;
+  margin: 4rem auto 6rem auto;
 }
 
 #expertise-section article:first-child {
@@ -235,6 +240,11 @@ main section {
     border: none !important;
     border-bottom: 1px solid var(--lightGrey) !important;
   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  #services .card:nth-child(3) {  border-right: 1px solid var(--lightGrey);  }
+  #services .card:nth-child(6) {  border-top: 1px solid var(--lightGrey);  }
 }
 
 #services .card .icon {
