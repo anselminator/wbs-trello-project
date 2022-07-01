@@ -62,7 +62,7 @@ html {
 }
 
 main section {
-    width: 1280px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
@@ -103,8 +103,21 @@ main section {
 }
 
 @media screen and (max-width: 767px) {
+  #our_story-section {
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+
   #our_story-section article {
     flex: 100%;
+  }
+
+  #our_story-section article:first-child {
+      width: 100%;
+  }
+
+  #our_story-section article:nth-child(2) {
+      width: 100%;
   }
 }
 
@@ -149,6 +162,15 @@ main section {
   text-transform: uppercase;
   color: #fff;
 }
+
+.videoZoom {
+  transition: transform .5s;
+}
+
+.videoZoom:hover {
+  transform: scale(1.2);
+}
+
 /* Here stops code for watch-section */
 
 /* Here start code for expertise-section */
