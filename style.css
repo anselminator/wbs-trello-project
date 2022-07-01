@@ -295,19 +295,19 @@ main section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
-    min-height: 200px;
-    min-width: 600px;
+    min-height: 30%;
+    min-width: 50%;
     background: transparent;
 
 }
 @media screen and (max-width: 767px) {
   .about-section {
     display: grid;
-    min-height: auto;
-    min-width: auto;
-    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    min-height: 10%;
+    min-width: 20%;
+    grid-template-columns: 1fr;
+    /* grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); */
   }
-
 }
 
 
@@ -316,6 +316,18 @@ main section {
     text-align: center;
     font-size: 0.6rem;
 }
+
+@media screen and (max-width: 767px) {
+  .about-content {
+    /* margin:0 auto; */
+    width: 100%;
+    height: 100px;
+    /* padding: 20px; */
+    /* max-width: 80%; */
+  }
+
+}
+
 .blank {
     background-color: white;
     height: 60%;
