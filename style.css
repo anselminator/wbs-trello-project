@@ -256,7 +256,10 @@ main section {
     align-items: center;
     justify-content: center;
 }
-
+.team-heading p{
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-size: 1rem;
+}
 .about-section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -290,16 +293,16 @@ main section {
 
 .button-hiring {
   background: transparent;
-  border: 1px solid white;
+  border: 1px solid #00e0d0;
   padding: 10px;
   text-align: center;
-  color: white;
+  color: #00e0d0;
   font-size: 0.8rem;
   margin: 0 auto;
 
 }
 .button-hiring:hover {
-  color: black;
+  color: #00e0d0;
   background:  rgba(255, 255, 255, 0.2);
 
 }
@@ -361,7 +364,7 @@ main section {
 .clientsimg {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0.6rem ;
+    gap: 0.9rem ;
 }
 
 
